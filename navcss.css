@@ -1,0 +1,41 @@
+#navmenu {
+  margin: 0;
+	padding: 0;
+}
+
+#navmenu ul{
+	margin: 0;
+	padding: 0;
+	height:30px;
+}
+
+#navmenu li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+	background:#09F;
+	text-align:center;
+}
+
+#navmenu ul li a{
+	text-align:left;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	height:50px;
+	width:150px;
+	display:block;
+	color:#000066;
+	padding-top:7px;
+}
+
+#navmenu ul ul{
+	position:absolute;
+	visibility: hidden;
+	top:30px;
+}
+
+#navmenu ul li:hover ul {
+	visibility:visible;
+}

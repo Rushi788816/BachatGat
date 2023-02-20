@@ -1,0 +1,129 @@
+
+<html>
+<head>
+<title>स्वयं सहायता बचत गट</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/vendor/formvalidation/dist/js/formValidation.min.js"></script>
+	<script src="/vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/account-opening-form.css"/>
+</head>
+<body>
+<form class="form-horizontal" action ="openUpdate.php" method="post">
+<div class="container padding-top-10">
+<div class="panel panel-default">
+				<div class="panel-heading">Loan By Member:
+				</div>
+				<div class="panel-body">
+						<div class="form-group">
+					<label class="control-label col-md-2 col-md-offset-2" for="Bachatgat_name">Name of BachatGat</label>
+
+							<div class="col-md-2">		
+				<input id="Bachatgat_name" name="Bachatgat_name" type="text" placeholder="Name" class="form-control " required=""/>
+							</div>
+							</div>
+						<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-2" for="Bachatgat_name">BachatGat_ID:</label>
+
+							<div class="col-md-2">		
+			<input id="Bachatgat_ID" name="Bachatgat_ID" type="text" placeholder="ID" class="form-control " required=""/>
+							</div>
+							</div>
+							<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-2" for="Bachatgat_name">Name:</label>
+
+							<div class="col-md-4">		
+		<input id="Name" name="Name" type="text" placeholder="LastName   FirstName   MiddleName" class="form-control " required=""/>
+							</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="add1">Address:</label>  
+								<div class="col-md-7">
+		<input id="add1" name="add1" type="text" placeholder="Address Line 1" class="form-control input-md margin-bottom" required="">
+								</div>
+									<div class="col-md-7 col-md-offset-4">
+			<input id="add2" name="add2" type="text" placeholder="Address Line 2"" class="form-control input-md">
+								</div>
+							</div>
+								<div class="form-group">
+							<label class=" col-md-4 control-label  margin-bottom:20" for="Date_of_Loan">Date_of_Loan:</label>
+							<div class="col-md-2">		
+		<input id="Date_of_Loan" name="Date_of_Loan" type="date" placeholder="dd/mm/yyyy" class="form-control " required=""/>
+							</div>
+						</div>
+							<div class="form-group">
+				<label class="control-label col-md-2 col-md-offset-2" for="Amount_of_Loan">Amount_of_Loan:</label>
+								<div class="col-md-2">
+				<input type="text" name="Amount_of_Loan" placeholder="Rs." class="form-control" required=""/>
+								</div>
+							</div>
+							<div class="form-group">
+			<label class="control-label col-md-2 col-md-offset-2" for="Amount_of_Share">Amount_of_Share:</label>
+								<div class="col-md-2">
+				<input type="text" name="Amount_of_Share" placeholder="Rs." class="form-control" required=""/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="Reason">Reason:</label>  
+								<div class="col-md-7">
+	<input id="Reason" name="Reason" type="text" placeholder="Enter a valid reason" class="form-control input-md margin-bottom" required="">
+								</div>
+							</div>
+						<div class="row">
+							<div class="form-group">
+								<label class = "control-label col-md-2 col-md-offset-2" placeholder="Select" for="Witness1">Witness1:</label> 
+								<div class="col-md-2">
+									<select class="form-control" id="user_type">
+										
+										<option>Select</option>
+										<option>Name1</option>
+										<option>Name2</option>
+									</select>
+								</div>
+								<label class = "control-label col-md-2 " for="Witness2">Witness2:</label> 
+								<div class="col-md-2">
+									<select class="form-control" id="user_type">
+										
+										<option>Select</option>
+										<option>Name1</option>
+										<option>Name2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label class = "control-label col-md-2 col-md-offset-2" for="Guarenteer1">Guarenteer1:</label> 
+								<div class="col-md-2">
+									<select class="form-control" id="user_type">
+										<option>Select</option>
+										<option>Name1</option>
+										<option>Name2</option>
+									</select>
+								</div>
+								<label class = "control-label col-md-2 " for="Guarenteer2">Guarenteer2:</label> 
+								<div class="col-md-2">
+									<select class="form-control" id="user_type">
+										<option>Select</option>
+										<option>Name1</option>
+										<option>Name2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+										<label class="col-md-2 control-label  padding-10"></label>
+								<div class="col-md-6 col-md-offset-2"> 
+									<button type="button" class="btn btn-primary btn-lg">Sanction</button>
+										<label class="control-label col-md-2 " for="Cancel"></label>
+									<button type="button" class="btn btn-primary btn-lg">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+				
+								
