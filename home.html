@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <!-- saved from url=(0045)file:///C:/Users/shaik/Desktop/IP/search.html -->
 <html>
@@ -8,9 +9,6 @@
 <link rel="stylesheet" href="./style.css">
 
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<style>
-* {box-sizing: border-box;}
-
 <style>
 * {box-sizing: border-box;}
 
@@ -249,6 +247,87 @@ transform:scale(1.1);
  background-color: rgba(241, 241, 241, 1);
 }
 
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .banner{
+  
+
+    border-radius: 5px;
+    margin:10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+h5{
+color:#F1F2F3;
+}
+.banner-container .banner .shoe img{
+    width:80%;
+}
+
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    
+}
+
+.banner-container .banner .content span{
+    color:#eee;
+    font-size: 30px;
+}
+
+.banner-container .banner .content h3{
+    color:white;
+    font-size: 30px;
+}
+
+.banner-container .banner .content p{
+    color:white;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+    display: block;
+    height:40px;
+    width:100px;
+    line-height: 40px;
+    background:#EEDC82;
+    color:black;
+    margin:5px auto;
+    text-decoration: none;
+}
+
+.banner-container .banner .women{
+    position: relative;
+    bottom: -33px;
+    padding:10px;
+    flex:1 1 250px;
+}
+
+.banner-container .banner .women img{
+    width:100%;
+}
+
+@media (max-width:768px){
+    .banner-container .banner .women{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 900px) {
  .grid-container {
   display: grid;
@@ -277,8 +356,8 @@ color:white;
 </head>
 <body background="C:\Users\Shradhha\Downloads\imagebg.jpg">
 <div class="topnav">
-  <a id="name" href="C:\Users\Shradhha\Desktop\home.html">Home</a>
-<a id="name" href="C:\Users\Shradhha\Desktop\aboutus.html">About</a>
+  <a id="name" href="search.html">Home</a>
+<a id="name" href="">About</a>
 
 <a id="name" href="C:\Users\Shradhha\Desktop\events.html">Events</a>
 <div class="dropdown">
@@ -308,37 +387,34 @@ color:white;
     <div class="search-container">
     
       <input class="tbuts" type="text" placeholder="Search.." name="search">
-      
+      <button class="cart_and_user" type="submit" onclick="cart()"><i class="fa fa-cart-arrow-down"></i></button>
 	  <button class="cart_and_user" type="submit"><i class="fa fa-user"></i></button>
 	  <button class="buts" type="submit"><i class="fa fa-search"></i></button>
-            
   	</div>
 
 </div>
-<br>
-<h1>Product Categories BUY PRODUCTS HERE...</h1>
-<div class="grid-container">
+<h2>स्वयं सहायता बचत गट</h2>
+<div class="banner-container">
 
-  <div><img id="img2" src="C:\Users\Shradhha\Downloads\food.jpg" height="200px" width="250px"><br><b id="2">Food Items</b><br>
-<b id="22"></b><button class="101" onclick="buy1()"><i class="fa fa-cart-arrow-down"></i></button></div>
+    <div class="banner">
+        <div class="shoe">
+            <img src="shoe.png" alt="">
+        </div>
+        <div class="content">
+            <h2>Sell Your Product Here!!!!</h2><br>
+            <h5> WELCOME to all sellers who having BachatGat Product, Agricultural products, Art's,Clothes,Food,Handicraft products, and Unique                         products.</h5><br>
+            <p>Global market FREE !!</p>
+<p>If you have any product, submit information here for marketing it!</p>
+            <a href="C:\Users\Shradhha\Desktop\product.html" class="btn">Click Here</a>
+<p>If you have bachatGat then for more benefits,Register Now...</p>
+        </div>
+        <div class="women">
+            <img src="" alt="">
+        </div>
+    </div>
 
-  <div><img id="img3" src="C:\Users\Shradhha\Downloads\cloth.jpg" height="200px" width="250px"><br><b id="3">Hand-made Cloths</b><br>
-<b id="32"></b><button class="101" onclick="buy2()"><i class="fa fa-cart-arrow-down"></i></button></div> 
+</div>
 
-  <div><img id="img4" src="C:\Users\Shradhha\Downloads\agri.jpg" height="200px" width="250px"><br><b id="4">Agricultural Products</b><br>
-<b id="42"></b><button class="101" onclick="buy3()"><i class="fa fa-cart-arrow-down"></i></button></div>
-
-<div><img id="img4" src="C:\Users\Shradhha\Downloads\art.jpg" height="200px" width="250px"><br><b id="4">Art</b><br>
-<b id="42"></b><button class="101" onclick="buy3()"><i class="fa fa-cart-arrow-down"></i></button></div>
-
-<div><img id="img4" src="C:\Users\Shradhha\Pictures\Screenshots\Screenshot (901).png" height="200px" width="250px"><br><b id="4">Handicraft</b><br>
-<b id="42"></b><button class="101" onclick="buy3()"><i class="fa fa-cart-arrow-down"></i></button></div>
-
-<div><img id="img4" src="C:\Users\Shradhha\Downloads\perfume.jpg" height="200px" width="250px"><br><b id="4">Perfumes</b><br>
-<b id="42"></b><button class="101" onclick="buy3()"><i class="fa fa-cart-arrow-down"></i></button></div>
-
- 
-  
 
 <!-- partial -->
 
