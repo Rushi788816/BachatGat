@@ -23,6 +23,7 @@ body {
  
 }
 
+
 .topnav {
   overflow: hidden;
   background-color: #2F45A8;
@@ -228,7 +229,7 @@ border-radius: 25px 25px 25px 25px;
 }
 
 .grid-container > div {
-  background-color: rgba(241, 241, 241, 0.5);
+ background-color:#ff69b4;
   border: 0;
   padding: 10px;
   border-radius: 15px;
@@ -243,29 +244,97 @@ border-radius: 25px 25px 25px 25px;
 
 .grid-container > div:hover{
 transform:scale(1.1);
- background-color: rgba(241, 241, 241, 1);
+ background-color:lightgrey;
 }
 
 @media only screen and (max-width: 900px) {
  .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #ffffff;
+ background-color:#ff69b4;
   padding: 10px;
   margin-left:95px
  }
 }
-.footer {  
-position:relative;
- left: 0px;  
-bottom: 0px;  
-right: 0%;   
-width: 100%;  
-font-family:Times New Roman, Times, serif;
-font-size:12.5px;
-color: gray;  
-text-align: center;  
-}  
+/* footer */
+footer{
+
+   
+    background-color: #1b1d1f;
+    padding: 50px 20px;
+    border-top: 5px solid #4eb060;
+}
+.footer-container{
+text-decoration: none;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo a{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-logo a span{
+    color: #4eb060;
+}
+.footer-social{
+    display: flex;
+    margin-top: 10px;
+}
+.footer-social a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+text-decoration: none;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #ffffff15;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: all ease 0.3s;
+}
+.footer-social a:hover{
+    background-color: #4eb060;
+    transition: all ease 0.3s;
+}
+.footer-links strong{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footer-links ul{
+    margin-top: 10px;
+}
+.footer-links ul li a{
+ list-style-type: none;
+    color: #ffffff;
+    opacity: 0.5;
+    margin: 4px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+.footer-links li a:hover{
+text-decoration: none;
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+/* Making-Responsive */
+.menu-icon,
+.menu-btn{
+    display: none;
+}
 h2{
 color:white;
 }
@@ -295,20 +364,22 @@ color:white;
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="C:\Users\Shradhha\Desktop\RegistrationForm.html">Member</a>
-      <a href="C:\Users\Shradhha\Desktop\Owner Details.html">Owner</a>
+      <a href="C:\Users\Shradhha\Desktop\member.html">Member</a>
+      <a href="C:\Users\Shradhha\Desktop\proshop.html">Customer</a>
+      <a href="">Retailer</a>
     </div>
   </div> 
- <a id="name" href="C:\Users\Shradhha\Desktop\MainLogin.html">Login</a>
+
   <a href="search.html" onclick="logout()" id="logout">Logout</a>
 
     <div class="search-container">
     
       <input class="tbuts" type="text" placeholder="Search.." name="search">
       
-	  <button class="cart_and_user" type="submit"><i class="fa fa-user"></i></button>
-	  <button class="buts" type="submit"><i class="fa fa-search"></i></button>
-            
+	  <a href="C:\Users\Shradhha\Desktop\MainLogin.html" class="cart_and_user" type="submit"><i class="fa fa-user"></i></a>
+	  <button class="buts" type="submit"><i class="fa fa-search"></i>
+             </button>
+           
   	</div>
 
 </div>
@@ -316,30 +387,30 @@ color:white;
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
-  <img src="C:\Users\Shradhha\Downloads\img1.jpg" style="width:70%" height="10%">
+  <img src="C:\Users\Shradhha\Pictures\Screenshots\Screenshot (927).png"  style="width:100%" height="5%">
   <div class="text"></div>
-<h2>स्वयं सहायता बचत गट</h2>
+<h2>  स्वयं सहायता </h2>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
-  <img src="C:\Users\Shradhha\Downloads\img2.jpg"  style="width:70%" height="10%">
+  <img src="C:\Users\Shradhha\Pictures\Screenshots\Screenshot (921).png"  style="width:110%" height="10%">
   <div class="text"></div>
-<h2>स्वयं सहायता बचत गट</h2>
+<h2>स्वयं सहायता </h2>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
-  <img src="C:\Users\Shradhha\Downloads\img4.jpg"  style="width:70%" height="10%"	>
+  <img src="C:\Users\Shradhha\Pictures\Screenshots\Screenshot (925).png"  style="width:100%" >
   <div class="text"></div>
-<h2>स्वयं सहायता बचत गट</h2>
+<h2>स्वयं सहायता </h2>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
-  <img src="C:\Users\Shradhha\Downloads\img3.jpg"  style="width:55%" height="10%"	>
+  <img src="C:\Users\Shradhha\Pictures\Screenshots\Screenshot (924).png" style="width:100%" height="10%"	>
   <div class="text"></div>
-<h2>स्वयं सहायता बचत गट</h2>
+<h2>स्वयं सहायता</h2>
 </div>
 
 </div>
@@ -352,32 +423,64 @@ color:white;
 </div>
 <div class="grid-container">
   <div><img id="img1" src="C:\Users\Shradhha\Downloads\img5.jpg" height="200px" width="250px"><br><b id="1">महिला बचत गट मार्गदर्शन केंद्र</b><br>
-<b id="12"></b><button class="101" onclick="buy1()"><i class="fa fa-cart-arrow-down"></i></button></div>
-<a href="C:\Users\Shradhha\Downloads\listGovyojana.pdf"></a>
+<b id="12"><button type="button">Read More..</button></b></div>
 
   <div><img id="img2" src="C:\Users\Shradhha\Downloads\img14.jpg" height="200px" width="250px"><br><b id="2">बचतगटासाठी प्रशिक्षण पुस्तिका</b><br>
-<b id="22"></b><button class="101" onclick="buy1()"><i class="fa fa-cart-arrow-down"></i></button></div>
+<b id="22"><button type="button">Read More..</button></b></div>
 
-  <div><img id="img3" src="C:\Users\Shradhha\Downloads\img7.jpg" height="200px" width="250px"><br><b id="3">बचत गट समृद्धी कर्ज योजना </b><br>
-<b id="32"></b><button class="101" onclick="buy2()"><i class="fa fa-cart-arrow-down"></i></button></div> 
+  <div><img id="img3" src="C:\Users\Shradhha\Downloads\img7.jpg" height="200px" width="250px"><br><b id="3">बचत गट समृद्धी कर्ज योजना </b><br><br>	
+<b id="32"><button type="button">Read More..</button></b></div> 
 
   <div><img id="img4" src="C:\Users\Shradhha\Downloads\img8.jpg" height="200px" width="250px"><br><b id="4">महिला बचत गटासाठी शासकीय योजना</b><br>
-<b id="42"></b><button class="101" onclick="buy3()"><i class="fa fa-cart-arrow-down"></i></button></div>
+<b id="42"><button type="button">Read More..</button></b></div>
 
-  <div><img id="img5" src="C:\Users\Shradhha\Downloads\img9.jpg" height="200px" width="250px"><br><b id="5">महिला बचत गटाचे पॅन कार्ड कसे काढावे ?</b><br>
-<b id="52"></b><button class="101" onclick="buy4()"><i class="fa fa-cart-arrow-down"></i></button></div>
+  <div><img id="img5" src="C:\Users\Shradhha\Downloads\img9.jpg" height="200px" width="250px">
+<br><b id="5">महिला बचत गटाचे पॅन कार्ड कसे काढावे ?</b><br>
+<b id="52"><button type="button">Read More..</button></b></div>
 
-  <div><a href="prod.html"><img id="img1" src="C:\Users\Shradhha\Downloads\img11.jpg" height="200px" width="250px"><br>
-<b>बचत गट बँक खाते उघडन्यासाठी लागणारी कागदपत्रे </b><br></a><button id="101" onclick=""><i class="fas fa-cart-plus"></i></button></div>
-
-  <div><a href="prod.html"><img id="img2" src="C:\Users\Shradhha\Downloads\img12.jpg" height="200px" width="250px"><br>
-<b>बचत गट सभासद राजीनामा अर्ज </b><br></a><button id="101" onclick=""><i class="fas fa-cart-plus"></i></button></div>
-
-  <div><a href="prod.html"><img id="img3" src="C:\Users\Shradhha\Downloads\img13.jpg" height="200px" width="250px"><br><b>नियम, अटी व मार्गदर्शक बाबी</b><br></a><button id="101" onclick=""><i class="fas fa-cart-plus"></i></button></div> 
+  <div><img id="img1" src="C:\Users\Shradhha\Downloads\img11.jpg" height="200px" width="250px">
+<br><b id="6">बचतगट बँक खाते उघडण्यासाठी कागदपत्रे</b><br>
+<b id="62"><button type="button">Read More..</button></div>
 
 </div>
-  
-
+ <footer>
+            <div class="footer-container">
+                <!--logo-container------>
+                <div class="footer-logo">
+                    
+                    
+                </div>
+                <!--links------------------------->
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">Food Items</a></li>
+                    <li><a href="#">HandMade Cloths</a></li>
+                    <li><a href="#">Agricultural Product</a></li>
+                    
+                </ul>
+            </div>
+            <!--links------------------------->
+            <div class="footer-links">
+                <strong>Art</strong>
+                <ul>
+                    <li><a href="#">Handicraft</a></li>
+                    <li><a href="#">Perfume</a></li>
+                   
+				<br><br><br><p style="color: aliceblue;">Copyright ©2022 | All Rights Reserved</p>
+                </ul>
+            </div>
+            <!--links-------------------------->
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="#">Phone : 9765378623</a></li>
+                    <li><a href="#">Email : swyamshayata@gmail.com</a></li>
+                    
+                </ul>
+            </div>
+            </div>
+        </footer>
 <!-- partial -->
 
 <script>

@@ -1,0 +1,762 @@
+<html>
+<head>
+	<title>स्वयं सहायता</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/vendor/formvalidation/dist/js/formValidation.min.js"></script>
+	<script src="/vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/account-opening-form.css"/>
+</head>
+<style>
+body {
+
+  margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #f1f1f1;	
+  color: #2F45A8;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #2F45A8;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #B0B8DE;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+  border-radius: 25px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ffffff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+.tbuts{
+ border-radius: 25px 0px 0px 25px;
+ text-indent:10px;
+ 
+}
+.buts{
+ border-radius: 0px 25px 25px 0px;
+}
+
+.cart_and_user{
+border-radius: 25px 25px 25px 25px;
+}
+@media screen and (max-width: 1000px) {
+  .topnav .search-container {
+    float: none;
+  }
+ 
+  .topnav a, .topnav input[type=text], .topnav, .search-container{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+  }
+  .cart_and_user, .buts{
+    float: none;
+    text-align: left;
+	border-radius: 25px 25px 25px 25px;
+ 	margin: 0;
+}
+  
+ .topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+}
+.dropdown:hover .dropbtn {
+  background: #ccc;
+    color: black;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+
+  padding: 0%;
+  margin-left:100px
+}
+
+.grid-container > div {
+ background-color:#ff69b4;
+  border: 0;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  max-width: 280px;
+  height: 300px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.grid-container > div:hover{
+transform:scale(1.1);
+ background-color:lightgrey;
+}
+
+@media only screen and (max-width: 900px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+ background-color:#ff69b4;
+  padding: 10px;
+  margin-left:95px
+ }
+}
+.footer {  
+position:relative;
+ left: 0px;  
+bottom: 0px;  
+right: 0%;   
+width: 100%;  
+font-family:Times New Roman, Times, serif;
+font-size:12.5px;
+color: gray;  
+text-align: center;  
+}  
+h2{
+color:white;
+}
+ select {
+        width: 350px;
+        margin: 10px;
+    }
+    select:focus {
+         width: 350px;
+         font-family:Times New Roman, Times, serif;
+         background-color:ivory;
+    }
+</style>
+<body background="C:\Users\Shradhha\Downloads\imagebg.jpg">
+<div class="topnav">
+  <a id="name" href="C:\Users\Shradhha\Desktop\home.html">Home</a>
+<a id="name" href="C:\Users\Shradhha\Desktop\aboutus.html">About</a>
+
+<a id="name" href="C:\Users\Shradhha\Desktop\events.html">Events</a>
+<div class="dropdown">
+
+    <button class="dropbtn">Download
+      <i class="fa fa-caret-down"></i> 
+    </button>
+    <div class="dropdown-content">
+      <a href="C:\Users\Shradhha\Desktop\ebook.html">E-Book</a>
+    </div>
+ </div> 
+
+<a id="name" href="C:\Users\Shradhha\Desktop\contacts.html">Contact</a>
+
+   <div class="dropdown">
+    <button class="dropbtn">Register 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="">Member</a>
+      <a href="">Customer</a>
+      <a href="">Retailer</a>
+    </div>
+  </div> 
+ <a id="name" href="C:\Users\Shradhha\Desktop\MainLogin.html">Login</a>
+ 
+
+    <div class="search-container">
+    
+      <input class="tbuts" type="text" placeholder="Search.." name="search">
+      
+	  <button class="cart_and_user" type="submit"><i class="fa fa-user"></i></button>
+	 
+            
+  	</div>
+
+</div>
+<form class="form-horizontal" action ="openUpdate.php" method="post">
+<div class="container padding-top-10">
+<div class="panel panel-default">
+				<div class="panel-heading">Personal Details:</div>
+
+				
+						<div class="form-group">
+							<label class="control-label col-md-2 col-md-offset-2" for="first_name">Full name :</label>
+
+							<div class="col-md-2">		
+								<input id="first_name" name="first_name" type="text" placeholder="First name" class="form-control " required=""/>
+							</div>
+							<div class="col-md-2">
+								<input id="middle_name" name="middle_name" type="text" placeholder="Middle Name" class="form-control " required="">
+							</div>
+							<div class="col-md-2">
+								<input id="last_name" name="last_name" type="text" placeholder="Last Name" class="form-control " required="">
+							</div>
+
+						</div>
+						<div class="form-group">
+							<label class="control-label padding-top-10 col-md-2 col-md-offset-2" for="father/husband_name">Name of Father/Husband:</label>
+
+							<div class="col-md-2">		
+								<input id="father/husband_name" name="father/husband_name" type="text" placeholder="First name" class="form-control " required=""/>
+							</div>
+							<div class="col-md-2">
+								<input id="father/husband_name_middle_name" name="father/husband_name_middle_name" type="text" placeholder="Middle Name" class="form-control " required="">
+							</div>
+							<div class="col-md-2">
+								<input id="father/husband_name_last_name" name="father/husband_name_last_name" type="text" placeholder="Last Name" class="form-control " required="">
+							</div>
+
+						</div>
+						<div class="form-group">
+							<label class=" col-md-4 control-label  margin-bottom:20" for="DOB">Date of Birth:</label>
+
+							<div class="col-md-4">		
+								<input id="DOB" name="DOB" type="date"  class="form-control " required=""/>
+							</div>
+						</div>
+
+						<!-- Multiple Radios (inline) -->
+						<div class="form-group">
+							<label class="col-md-4 control-label margin-bottom:20" for="Male">Gender:</label>
+							<div class="col-md-6"> 
+								<label class="radio-inline" for="Male">
+									<input type="radio" name="Gender" id="Male" value="meet_Male" checked="checked">
+									Male
+								</label> 
+								<label class="radio-inline" for="Female">
+									<input type="radio" name="Gender" id="Female-1" value="meet_Female">
+									Female
+								</label>
+								<label class="radio-inline" for="Other">
+									<input type="radio" name="Gender" id="Other" value="meet_Other">
+									Other
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4 control-label margin-bottom:20" for="Single">Marital Status:</label>
+							<div class="col-md-6"> 
+								<label class="radio-inline" for="Single">
+									<input type="radio" name="Marital_Status" id="single" value="meet_Single" checked="checked">
+									Single
+								</label> 
+								<label class="radio-inline" for="Married">
+									<input type="radio" name="Marital_Status" id="Married" value="meet_Female">
+									Married
+								</label>
+								<label class="radio-inline" for="Other1">
+									<input type="radio" name="Marital_Status" id="Other1" value="meet_Other">
+									Other
+								</label>
+							</div>
+						
+						</div>
+						
+						<div class="panel-heading">
+						Residential Address
+					</div>
+					<div class="panel-body">
+					<!--	<form class="form-horizontal">
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="add1">Address:</label>  
+								<div class="col-md-7">
+									<input id="add1" name="add1" type="text" placeholder="Address Line 1" class="form-control input-md margin-bottom" required=""></div>
+									<div class="col-md-7 col-md-offset-4">
+										<input id="add2" name="add2" type="text" placeholder="Address Line 2"" class="form-control input-md">
+									</div>
+
+								</div>
+
+
+								<!-- Text input-->
+								<div class="row">
+									<div class="form-group">
+										<label class="col-md-4 control-label" for="At">At:</label>  
+										<div class="col-md-2">
+											<input id="At" name="At" type="text" placeholder=" " class="form-control input-md" required="">
+
+										</div>
+										<label class="col-md-3 control-label" for="Post">Post:</label>  
+										<div class="col-md-2">
+											<input id="Post" name="Post" type="text" placeholder=" " class="form-control input-md" required="">
+
+										</div>
+
+									</div>
+								</div>
+
+
+								<div class="row">
+									<div class="form-group">
+										<label class="col-md-4 control-label" for="Taluka">Taluka:</label>  
+										<div class="col-md-2">
+											<input id="Taluka" name="Taluka" type="text" placeholder=" " class="form-control input-md" required="">
+
+										</div>
+
+										<label class="col-md-3 control-label" for="Pin_code">Pin Code:</label>  
+										<div class="col-md-2">
+											<input id="Pin_code" name="Pin_code" type="text" placeholder=" " class="form-control input-md" required="">
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group">
+										<label class="col-md-4 control-label" for="phone_number">Phone Number:</label>  
+										<div class="col-md-2">
+											<input id="phone_number" name="phone_number" type="number" max="10" placeholder="Phone Number" class="form-control input-md" >
+
+										</div>
+
+										<label class="col-md-3 control-label" for="Mobile_number">Mobile Number:</label>  
+										<div class="col-md-2">
+											<input id="Mobile_number" name="Mobile_number" type="tel" placeholder="Mobile Number" class="form-control input-md" required="">
+
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						<div class="panel-heading">
+									Income Tax PAN or Form 60/61(IT Act)
+								</div>
+								<div class="panel-body">
+									<form class="form-vertical">
+										<div class="form-group">
+											<label class="control-label col-md-2 col-md-offset-2" for="Pan_no">Income Tax PAN or Form 60/61(IT Act) :</label>
+
+											<div class="col-md-4">		
+												<input id="Pan_no" name="Pan_no" type="text" placeholder="" class="form-control" required=""/>
+											</div>
+										</div>
+									</div>
+						
+						<div class="panel-heading">
+									Identification Details(attach copies of document)
+								</div>
+								<div class="panel-body">
+
+									
+									<form class="form-horizontal">
+										<div class="form-group">
+											<div class="row">
+												<label class="control-label col-md-4 " for="Proof_of_Identity">Proof Of Identity :</label>
+
+
+												<label class="control-label col-md-6 " for="Proof_of_address">Proof Of Address :</label>
+											</div>
+
+											<div class="checkbox">
+
+												<div class="row">
+													<label class="control-label col-md-4 " for="Voter_id_card">Voter ID Card</label>
+													<div class="checkbox col-md-1">
+														<input type="checkbox" value="Voter_id_card">
+													</div>
+													
+
+
+													<label class="control-label col-md-5 " for="Salary_slip">Salary Slip(With Address)</label>
+													<div class="checkbox col-md-1 ">
+														<input type="checkbox" value="Salary_slip">
+													</div>
+												</div>
+
+
+
+
+												<div class="row">
+													<label class="control-label col-md-4 " for="Pan_card">PAN Card</label>
+													<div class="checkbox col-md-1 ">
+														<input type="checkbox" value="Pan_card">
+													</div>
+													
+
+													<label class="control-label col-md-5 " for="Income_tax">Income Tax/Wealth tax assesment order</label>
+													<div class="checkbox col-md-1 ">
+														<input type="checkbox" value="Income_tax">
+													</div>
+												</div>
+
+
+												<div class="row">
+													<label class="control-label col-md-4 " for="Govt_ID_card">Government ID Card</label>
+													<div class="checkbox col-md-1 ">
+														<input type="checkbox" value="Govt_ID_card">
+													</div>
+
+													<label class="control-label col-md-5 " for="Home_Tax">Home Tax</label>
+													<div class="checkbox col-md-1 ">
+														<input type="checkbox" value="Home_Tax">
+													</div>
+												</div>
+
+
+												<div class="row">
+
+													<label class="control-label col-md-4 " for="ID_Card_of_reputed_employer">ID Card of reputed employer</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="ID_Card_of_reputed_employer">
+													</div>
+
+													
+
+
+													<label class="control-label col-md-5 " for="Electricity_bill">Electricity Bill</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="Electricity_bill">
+													</div>
+												</div>
+
+
+
+												<div class="row">
+
+													<label class="control-label col-md-4 " for="Driving_License">Driving License</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="Driving_License">
+													</div>
+
+													
+													<label class="control-label col-md-5 " for="Bank_account_statement">Bank account statement</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="Bank_account_statement">
+													</div>
+												</div>
+
+
+												<div class="row">
+
+													<label class="control-label col-md-4 " for="Id_given_by_Grampanchayat">Id given by Grampanchayat</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="Id_given_by_Grampanchayat">
+													</div>
+
+													<label class="control-label col-md-5 " for="Letter_from_reputed_employer">Letter from reputed employer</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="Letter_from_reputed_employer">
+													</div>
+												</div>
+
+
+												<div class="row">
+
+													<label class="control-label col-md-4 " for="Aadhar_card_no">Aadhar Card Number:</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="Aadhar_card_no">
+													</div>	
+
+													<label class="control-label col-md-5 " for="Ration_card">Ration Card</label>
+													<div class=" checkbox col-md-1">
+														<input type="checkbox" value="Ration_card">
+													</div>										
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+	<div class="panel-heading">Choose the Scheme:</div>
+					<div class="panel-body">
+                                      <form class="form-horizontal">
+<h4>Select the Scheme you want to Applied:</h4>	
+ <select>
+   
+            <option>Schemes-Department of Rural Development</option>
+           <option>स्वर्णजयंती ग्राम स्वरोजगार योजना</option>
+            <option>मुदत कर्ज योजना (लहान व मध्यम व्यवसायासाठी)</option>
+            <option>महिला समृध्दी योजना</option>
+          <option>प्रधानमंत्री जन धन योजना(पीएमजेडीवाई)</option>
+            <option>प्रधानमंत्री जीवन ज्योति बीमा योजना</option>
+          <option>प्रधानमंत्री कौशल विकास योजना (pmkvy)</option>
+          <option>प्रधानमंत्री ग्रामीण उजाला योजना</option>
+          <option>सांसद आदर्श ग्राम योजना</option>
+        </select>
+					<div class="form-group">
+                                        <div class="row">
+					<div class="col-md-10"> 
+					
+
+												</div>
+											</div>
+										</div>
+		<div class="panel-heading">Form D A 1</div>
+			<div class="panel-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-12">
+<h5>Nomination under section 45ZA of the banking Regulation Act 1949 and Rule 2(1) of the Banking Companies (Nomination) Rules 1985 in respect of Bank Deposits</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="form-group">
+							<label class="control-label col-md-2 col-md-offset-2" for="I_we">I or We :</label>
+
+							<div class="col-md-4">		
+								<input id="I_we" name="I_we" type="text" placeholder="" class="form-control " required=""/>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="form-group">
+							<label class="control-label col-md-2 col-md-offset-2" for="Full_address">Full address</label>
+
+							<div class="col-md-4">		
+								<input id="Full_address" name="Full_address" type="text" placeholder="" class="form-control " required=""/>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<div class="conatiner">
+							<div class="row">
+								<div class="col-md-11">
+									<h5>Nomination under section 45ZA of the banking Regulation Act 1949 and Rule 2(1) of the Banking Companies (Nomination) Rules 1985 in respect of Bank Deposits</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+
+						<div class="form-group">
+							<label class="control-label col-md-2 col-md-offset-2" for="Nominee_full_name">Nominee Full Name</label>
+
+							<div class="col-md-4">		
+								<input id="Nominee_full_name" name="Nominee_full_name" type="text" placeholder="" class="form-control " required=""/>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+
+						<div class="form-group">
+							<label class="control-label col-md-2 col-md-offset-2" for="Relationship_with_Account_holder">Relationship with Account Holder</label>
+
+							<div class="col-md-4">		
+								<input id="Relationship_with_Account_holder" name="Relationship_with_Account_holder" type="text" placeholder="" class="form-control " required=""/>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="Address_of_Nominee">Address of Nominee:</label>  
+						<div class="col-md-7">
+							<input id="Address_of_Nominee" name="Address_of_Nominee" type="text" placeholder="Address of Nominee" class="form-control" required=""></div>
+
+						</div>
+
+
+						<div class="row">
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="At_of_Nominee">At:</label>  
+								<div class="col-md-2">
+									<input id="At_of_Nominee" name="At_of_Nominee" type="text" placeholder=" " class="form-control " required="">
+
+								</div>
+								<label class="col-md-3 control-label" for="Post_of_Nominee">Post:</label>  
+								<div class="col-md-2">
+									<input id="Post_of_Nominee" name="Post_of_Nominee" type="text" placeholder=" " class="form-control " required="">
+
+								</div>
+
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="Taluka_of_Nominee">Taluka:</label>  
+								<div class="col-md-2">
+									<input id="Taluka_of_Nominee" name="Taluka_of_Nominee" type="text" placeholder=" " class="form-control input-md" required="">
+
+								</div>
+
+								<label class="col-md-3 control-label" for="Pin_code_of_Nominee">Pin Code:</label>  
+								<div class="col-md-2">
+									<input id="Pin_code_of_Nominee" name="Pin_code_of_Nominee" type="text" placeholder=" " class="form-control input-md" required="">
+
+								</div>
+
+							</div>
+						</div>
+
+
+
+					</div>
+					</div>
+	<a href="C:\Users\Shradhha\Desktop\Bachatgat\Owner Details.html"><button type="button" class="btn btn-primary btn-lg">Submit</button></a>
+		
+				</form>
+			      
+				</div>
+						
+									
+</body>
+</html>		
+				
+		

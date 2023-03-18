@@ -1,26 +1,15 @@
 
 <!DOCTYPE html>
 <!-- saved from url=(0045)file:///C:/Users/shaik/Desktop/IP/search.html -->
-<html>
-<head>
+<html><head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./style.css">
-
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <style>
 * {box-sizing: border-box;}
 
 body {
   margin: 0;
- font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  background-color: #f1f1f1;	
-  color: #2F45A8;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
- 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
@@ -221,24 +210,25 @@ border-radius: 25px 25px 25px 25px;
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 40px;
+  grid-gap:10px;
 
-  padding: 0%;
-  margin-left:100px
+  padding: 5px;
+  margin-left:15px;
+margin-right:15px
 }
 
 .grid-container > div {
   background-color: rgba(241, 241, 241, 0.5);
   border: 0;
-  padding: 10px;
-  border-radius: 15px;
+  padding:5px;
+   margin-left:10px;
+  border-radius:5px;
   text-align: center;
   font-size: 20px;
   max-width: 280px;
   height: 300px;
-  margin-top: 25px;
-  margin-bottom: 20px;
-  transition: all .3s ease-in-out;
+  margin-top: 15px;
+  transition: all .2s ease-in-out;
 }
 
 .grid-container > div:hover{
@@ -249,84 +239,111 @@ transform:scale(1.1);
 @media only screen and (max-width: 900px) {
  .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   background-color: #ffffff;
   padding: 10px;
   margin-left:95px
  }
 }
-.footer {  
-position:relative;
- left: 0px;  
-bottom: 0px;  
-right: 0%;   
-width: 100%;  
-font-family:Times New Roman, Times, serif;
-font-size:12.5px;
-color: gray;  
-text-align: center;  
-}  
-h2{
-color:white;
-}
-.about{
-color:white;
-}
-
 </style>
 </head>
 <body background="C:\Users\Shradhha\Downloads\imagebg.jpg">
 <div class="topnav">
-  <a id="name" href="C:\Users\Shradhha\Desktop\home.html">Home</a>
-<a id="name" href="C:\Users\Shradhha\Desktop\aboutus.html">About</a>
-
-<a id="name" href="C:\Users\Shradhha\Desktop\events.html">Events</a>
-<div class="dropdown">
-
-    <button class="dropbtn">Download
-      <i class="fa fa-caret-down"></i> 
-    </button>
-    <div class="dropdown-content">
-      <a href="C:\Users\Shradhha\Desktop\ebook.html">E-Book</a>
-    </div>
- </div> 
-
-<a id="name" href="C:\Users\Shradhha\Desktop\contacts.html">Contact</a>
+  <a id="name" href="search.html">Home</a>
+  <a href="file:///C:/Users/shaik/Desktop/IP/search.html#product">Product</a>
 
    <div class="dropdown">
     <button class="dropbtn">Register 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="C:\Users\Shradhha\Desktop\RegistrationForm.html">Member</a>
-      <a href="C:\Users\Shradhha\Desktop\Owner Details.html">Owner</a>
+      <a href="U_Reg.html">Customer</a>
+      <a href="V_Reg.html">Vendor</a>
     </div>
   </div> 
-
-
+  <div class="dropdown">
+    <button class="dropbtn">Login 
+      <i class="fa fa-caret-down"></i>
+    </button>
+  <div class="dropdown-content">
+      <a href="U_login.html">Customer</a>
+      <a href="V_login.html">Vendor</a>
+  </div>
+  
+  </div> 
+  <a href="search.html" onclick="logout()" id="logout">Logout</a>
     <div class="search-container">
     
       <input class="tbuts" type="text" placeholder="Search.." name="search">
-      
+      <button class="cart_and_user" type="submit" onclick="cart()"><i class="fa fa-cart-arrow-down"></i></button>
 	  <button class="cart_and_user" type="submit"><i class="fa fa-user"></i></button>
 	  <button class="buts" type="submit"><i class="fa fa-search"></i></button>
-            
-  	</div>
-
-</div>
-<br>
-  <section class="about-us">
-    <div class="about">
-      <img src="C:\Users\Shradhha\Pictures\Screenshots\Screenshot (882).png" width="20%" height="10%" class="pic">
- <h2>About Us</h2>
-<h4>"स्वयं सहायता बचत गट" तयार केलेले हे सॉफ्टवेअर बचतगट मंडळ किंवा बचत समाजांसाठी उपयुक्त आहे. <br><br>महिलांना महाराष्ट्र बचतगट हे सॉफ्टवेअर समजण्यास आणि वापरण्यास सोपे जावे म्हणून सादर सॉफ्टवेअर मध्ये म इंग्रजी ह्या  पर्याय दिला आहे.<br> <br>महाराष्ट्र बचत गट सॉफ्टवेअर चा वापर करून महिला, महिन्याचा रिपोर्ट, लोणचा रिपोर्ट, बचत गटाची संपूर्ण अवाक जावक एका क्लिक वर पाहू शकतात <br>तसेच प्रत्येक मेंबरचे पासबुक सॉफ्टवेअर तयार करते. <br>
-</h4>
     
-    </div>
-  </section>
+  	</div>
+</div>
+<img src="C:\Users\Shradhha\Pictures\Screenshots\Screenshot (886).png" width="15%" height="10%"><h1> Government Schemes for Women Business Entrepreuner</h1></img>
+<div class="grid-container">
+  <div><img id="img1" src="https://i0.wp.com/sarkarireader.com/wp-content/uploads/2021/04/Mahila-Kisan-Yojana-Application-PDF-Form-Download.jpg?fit=550%2C364&ssl=1" height="150px" width="150px"><br><b>1.मुद्रा योजना</b><br></div>
+  <div><img id="img2" src="" height="150px" width="150px"><br><b>2. समृद्धी योजना</b><br></div>
+  <div><img id="img3" src="" height="150px" width="150px"><br><b>3.</b><br></div> 
+  <div><img id="img4" src="" height="150px" width="150px"><br><b>4.</b><br></div>
+  <div><img id="img5" src="" height="150px" width="150px"><br><b>5.</b><br></div>
+  <div><img id="img6" src="" height="150px" width="150px"><br><b>6.</b><br></div> 
+</div>
+<script>
+  var xhr = new XMLHttpRequest();
+  var url = "http://localhost:4000/images/";
+  xhr.open("POST", url, true);
+  xhr.setRequestHeader('Content-Type','application/json');
+  xhr.send();
+  //document.getElementById("w").innerHTML= "abcdef";
+  xhr.onload = function () {
+      if (this.status == 200) {
+          //alert(JSON.parse(this.responseText));
+          //document.getElementById("img1").src=(this.responseText);
+          var ans = JSON.parse(this.responseText);
+          //arr.push(this.responseText);
+      }
+      
+      else if (this.status == 400) {
+          //message = alert(this.responseText);
+          //document.write("123456s");
+          alert(message.message);
+      }
+      else {
+          alert("incorrect request");
+      }
+      for(var i=0;i<ans.length;i++)
+      {
+        document.getElementById("img"+(i+1).toString()).src = ans[i];
+      }
+      
+ }
+</script>
+<script>
+  function cart(){
+  location.href="cart.html";
+  }
+</script>
+<script>
+  
+var l=localStorage.getItem("textvalue");
+
+ if(l.length>0){
+  document.getElementById("name").innerHTML=localStorage.getItem("textvalue");
+}
+</script>
+<script>
+function logout(){
+  localStorage.clear()
+}</script>
+<script>
+  if(localStorage.getItem("textvalue")==null){
+    document.getElementById("logout").style.display="none"
+  }
+  else{
+    document.getElementById("logout").style.display="block"
+  }
+</script>
 </body>
 </html>
-
-
- 
- 
